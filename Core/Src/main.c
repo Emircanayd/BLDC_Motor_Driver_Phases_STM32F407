@@ -131,7 +131,7 @@ int main(void)
 
 	      case 1:
 	 	  	  //phase 6
-	 	  	  __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_2, duty_cycle0);           // c high 0
+	 	  __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_2, duty_cycle0);           // c high 0
 	       	  __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, duty_cycle100);         // c low 1
 	       	  __HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_2, duty_cycle0);           // b high 0
 	       	  __HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_1, duty_cycle0);           // b low 0
